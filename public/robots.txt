@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://git-and-github-learn.vercel.app/sitemap.xml
+Sitemap: https://git-github-doc.vercel.app/sitemap.xml

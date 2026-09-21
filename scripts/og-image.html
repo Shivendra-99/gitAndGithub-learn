@@ -1,0 +1,113 @@
+<!doctype html>
+<!--
+  Source of truth for public/og-image.png (the 1200x630 link-preview card).
+
+  To regenerate: open this file in a browser and click the canvas to download
+  the PNG, then replace public/og-image.png. No build step and no dependency —
+  the card changes about once a year.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>og-image source</title>
+    <style>
+      body { margin: 0; display: grid; place-items: center; min-height: 100vh; background: #0d1117; }
+      canvas { max-width: 96vw; height: auto; cursor: pointer; box-shadow: 0 8px 40px rgb(0 0 0 / 50%); }
+      p { color: #8b949e; font: 14px system-ui, sans-serif; }
+    </style>
+  </head>
+  <body>
+    <canvas id="og" width="1200" height="630"></canvas>
+    <p>Click the card to download og-image.png</p>
+
+    <script>
+      const ORANGE = "#f05033"
+      const SANS = "'IBM Plex Sans', system-ui, 'Segoe UI', Roboto, sans-serif"
+      const MONO = "'JetBrains Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace"
+
+      const canvas = document.getElementById("og")
+      const ctx = canvas.getContext("2d")
+
+      /** A commit node, matching the graph diagram used across the site. */
+      function dot(x, y, r, fill) {
+        ctx.beginPath()
+        ctx.arc(x, y, r, 0, Math.PI * 2)
+        ctx.fillStyle = fill
+        ctx.fill()
+        ctx.lineWidth = 6
+        ctx.strokeStyle = "#16110f"
+        ctx.stroke()
+      }
+
+      function draw() {
+        // Background, warm near-black to match the site's dark theme.
+        ctx.fillStyle = "#16110f"
+        ctx.fillRect(0, 0, 1200, 630)
+
+        // Deliberately flat: a radial glow behind the graph looked better but
+        // pushed the PNG past 350KB, and a hard-edged panel read as a
+        // rendering artifact. Flat background, no seam, 72KB.
+
+        // A commit graph that branches and merges, bottom right.
+        const y0 = 470
+        const y1 = 380
+        ctx.lineWidth = 5
+        ctx.strokeStyle = "rgba(240, 80, 51, 0.55)"
+        ctx.beginPath()
+        ctx.moveTo(760, y0)
+        ctx.lineTo(1120, y0)
+        ctx.stroke()
+        ctx.beginPath()
+        ctx.moveTo(850, y0)
+        ctx.bezierCurveTo(895, y0, 895, y1, 940, y1)
+        ctx.lineTo(1030, y1)
+        ctx.bezierCurveTo(1075, y1, 1075, y0, 1120, y0)
+        ctx.stroke()
+        for (const x of [760, 850, 940, 1030]) dot(x, x >= 940 ? y1 : y0, 14, ORANGE)
+        dot(940, y0, 14, ORANGE)
+        dot(1030, y0, 14, ORANGE)
+        dot(1120, y0, 18, "#3fb950") // the merge commit
+
+        // Eyebrow.
+        ctx.fillStyle = ORANGE
+        ctx.font = `600 26px ${MONO}`
+        ctx.letterSpacing = "2px"
+        ctx.fillText("git-github-doc.vercel.app", 90, 130)
+        ctx.letterSpacing = "0px"
+
+        // Wordmark.
+        ctx.fillStyle = "#f5f0ed"
+        ctx.font = `700 96px ${SANS}`
+        ctx.fillText("Git & GitHub", 90, 260)
+        ctx.fillStyle = ORANGE
+        ctx.font = `700 96px ${SANS}`
+        ctx.fillText("Learn", 90, 366)
+
+        // Subtitle.
+        ctx.fillStyle = "#b8aca6"
+        ctx.font = `400 34px ${SANS}`
+        ctx.fillText("Learn Git without the fear of breaking something.", 90, 440)
+
+        // Feature line.
+        ctx.fillStyle = "#8b7f79"
+        ctx.font = `500 27px ${SANS}`
+        ctx.fillText("40 lessons  ·  72 interview questions  ·  live playground", 90, 500)
+
+        // Bottom accent rule.
+        ctx.fillStyle = ORANGE
+        ctx.fillRect(90, 556, 120, 8)
+      }
+
+      // Wait for webfonts if they happen to be installed, then draw.
+      document.fonts.ready.then(draw)
+      draw()
+
+      canvas.addEventListener("click", () => {
+        const link = document.createElement("a")
+        link.download = "og-image.png"
+        link.href = canvas.toDataURL("image/png")
+        link.click()
+      })
+    </script>
+  </body>
+</html>

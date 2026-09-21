@@ -1,259 +1,259 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://git-and-github-learn.vercel.app/</loc>
+    <loc>https://git-github-doc.vercel.app/</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/interview-questions</loc>
+    <loc>https://git-github-doc.vercel.app/interview-questions</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/playground</loc>
+    <loc>https://git-github-doc.vercel.app/playground</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/why-version-control</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/why-version-control</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/what-is-git</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/what-is-git</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/installing-and-configuring-git</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/installing-and-configuring-git</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/how-git-stores-data</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/how-git-stores-data</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/the-three-trees</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/the-three-trees</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/init-and-clone</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/init-and-clone</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/staging-and-committing</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/staging-and-committing</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/status-and-diff</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/status-and-diff</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/reading-history</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/reading-history</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/gitignore</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/gitignore</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/commit-messages</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/commit-messages</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/stashing</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/stashing</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/branches-explained</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/branches-explained</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/creating-and-switching-branches</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/creating-and-switching-branches</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/merging</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/merging</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/merge-conflicts</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/merge-conflicts</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/rebasing</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/rebasing</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/merge-vs-rebase</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/merge-vs-rebase</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/remotes-explained</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/remotes-explained</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/push-fetch-pull</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/push-fetch-pull</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/tracking-branches</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/tracking-branches</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/ssh-and-authentication</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/ssh-and-authentication</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/forks-and-syncing</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/forks-and-syncing</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/undoing-uncommitted-changes</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/undoing-uncommitted-changes</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/amending-commits</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/amending-commits</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/reset-revert-restore</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/reset-revert-restore</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/interactive-rebase</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/interactive-rebase</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/reflog-and-recovery</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/reflog-and-recovery</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/what-is-github</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/what-is-github</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/creating-and-pushing-a-repo</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/creating-and-pushing-a-repo</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/readme-and-repo-files</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/readme-and-repo-files</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/issues-and-tracking</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/issues-and-tracking</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/pull-requests</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/pull-requests</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/code-review</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/code-review</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/github-actions</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/github-actions</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/releases-and-pages</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/releases-and-pages</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/branching-strategies</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/branching-strategies</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/protecting-main</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/protecting-main</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/git-config-and-aliases</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/git-config-and-aliases</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://git-and-github-learn.vercel.app/lessons/git-troubleshooting</loc>
+    <loc>https://git-github-doc.vercel.app/lessons/git-troubleshooting</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
