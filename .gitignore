@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# graphify knowledge graph (generated, 2.4MB incl. cache) — rebuild with: graphify update .
+graphify-out/
