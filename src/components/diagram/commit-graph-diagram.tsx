@@ -38,6 +38,8 @@ const STEP_X = 78
 const LANE_H = 62
 const PAD_X = 58
 const PAD_TOP = 40
+/** vertical gap between ref labels that point at the same commit */
+const REF_STACK = 20
 
 const TONE_FILL: Record<NonNullable<GraphCommit["tone"]>, string> = {
   default: "fill-primary",
@@ -64,17 +66,29 @@ export function CommitGraphDiagram({
   const [playing, setPlaying] = useState(false)
   const timer = useRef<ReturnType<typeof setInterval> | null>(null)
 
+  // Several refs can point at one commit (main + HEAD + a feature branch), so
+  // they're stacked upwards and the top padding grows to keep them in frame.
+  const stackIndex = new Map<GraphRef, number>()
+  const perCommit = new Map<string, number>()
+  for (const reference of refs) {
+    const taken = perCommit.get(reference.at) ?? 0
+    stackIndex.set(reference, taken)
+    perCommit.set(reference.at, taken + 1)
+  }
+  const tallestStack = Math.max(1, ...perCommit.values())
+  const padTop = PAD_TOP + (tallestStack - 1) * REF_STACK
+
   const positions = useMemo(() => {
     const map = new Map<string, { x: number; y: number; index: number }>()
     commits.forEach((commit, index) => {
-      map.set(commit.id, { x: PAD_X + index * STEP_X, y: PAD_TOP + commit.lane * LANE_H, index })
+      map.set(commit.id, { x: PAD_X + index * STEP_X, y: padTop + commit.lane * LANE_H, index })
     })
     return map
-  }, [commits])
+  }, [commits, padTop])
 
   const maxLane = commits.reduce((max, commit) => Math.max(max, commit.lane), 0)
   const width = PAD_X + Math.max(0, commits.length - 1) * STEP_X + PAD_X
-  const height = PAD_TOP + maxLane * LANE_H + 74
+  const height = padTop + maxLane * LANE_H + 74
 
   useEffect(() => {
     if (!playing) return
@@ -150,7 +164,7 @@ export function CommitGraphDiagram({
                 <text
                   key={lane}
                   x={6}
-                  y={PAD_TOP + Number(lane) * LANE_H + 4}
+                  y={padTop + Number(lane) * LANE_H + 4}
                   className="fill-muted-foreground font-mono-code text-[10px]"
                 >
                   {label}
@@ -221,6 +235,7 @@ export function CommitGraphDiagram({
             const isHead = reference.tone === "head"
             const isTag = reference.tone === "tag"
             const boxWidth = reference.name.length * 6.2 + 14
+            const lift = (stackIndex.get(reference) ?? 0) * REF_STACK
             return (
               <motion.g
                 key={reference.name + "-" + reference.at}
@@ -230,7 +245,7 @@ export function CommitGraphDiagram({
               >
                 <rect
                   x={point.x - boxWidth / 2}
-                  y={point.y - 34}
+                  y={point.y - 34 - lift}
                   width={boxWidth}
                   height={18}
                   rx={5}
@@ -245,7 +260,7 @@ export function CommitGraphDiagram({
                 />
                 <text
                   x={point.x}
-                  y={point.y - 21}
+                  y={point.y - 21 - lift}
                   textAnchor="middle"
                   className={cn(
                     "font-mono-code text-[10px]",

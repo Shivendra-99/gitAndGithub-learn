@@ -9,6 +9,7 @@ import LessonPage from "@/pages/lesson-page"
 import NotFound from "@/pages/not-found"
 
 const InterviewQuestionsPage = lazy(() => import("@/pages/interview-questions"))
+const PlaygroundPage = lazy(() => import("@/pages/playground"))
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
               <Route element={<AppLayout />}>
                 <Route path="/" element={<Home />} />
                 <Route path="/interview-questions" element={<InterviewQuestionsPage />} />
+                <Route path="/playground" element={<PlaygroundPage />} />
                 <Route path="/lessons/:slug" element={<LessonPage />} />
                 <Route path="*" element={<NotFound />} />
               </Route>

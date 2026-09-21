@@ -29,6 +29,7 @@ const today = new Date().toISOString().slice(0, 10)
 const urls = [
   { loc: "/", changefreq: "weekly", priority: "1.0" },
   { loc: "/interview-questions", changefreq: "monthly", priority: "0.9" },
+  { loc: "/playground", changefreq: "monthly", priority: "0.9" },
   ...slugs.map((slug) => ({ loc: `/lessons/${slug}`, changefreq: "monthly", priority: "0.8" })),
 ]
 
